@@ -1,9 +1,5 @@
 :root {
-  --white: #fff;
-  --dark-blue: #13293d;
-  --tan: #d8a47f;
-  /* You can use it with any value that is repeated throughout the sheet */
-  --border-radius: 50px;
+  --aqua: #6db7aa;
 }
 
 html {
@@ -87,7 +83,7 @@ header {
 }
 
 #nav-container a:hover{
-  color:#6db7aa;
+  color:var(--aqua);
 }
 
 /* Section */
@@ -132,7 +128,7 @@ section p {
 .proj-card--main{
   flex-grow: 2;
   margin:12px;
-  border:1px solid #6db7aa;
+  border:1px solid var(--aqua);
   padding:24px;
 }
 
@@ -144,7 +140,7 @@ section p {
 .proj-card{
   flex: 1;
   margin:12px;
-  border:1px solid #6db7aa;
+  border:1px solid var(--aqua);
   padding:24px;
 }
 
@@ -185,8 +181,24 @@ footer{
 
 /* Media Queries */
 
-/* Portrait */
-@media only screen and (max-width: 480px) {
+
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+
+  h1{
+    font-size:28px;
+  }
+
+  h2{
+    font-size:20px;
+  }
+
+  #nav-container a{
+    margin-left:18px;
+    font-size: 16px;
+  }
+
   section {
     display: block;
     padding:48px;
@@ -201,4 +213,37 @@ footer{
     border-bottom:1px solid #f2dc7e;
     margin-bottom:16px;
   }
+
+}
+
+/* phone */
+@media only screen and (max-width: 480px) {
+
+  header {
+    padding:40px;
+  }
+
+  #header-elements-container{
+    display:block;
+    height:300px;
+    padding: 48px;
+  }
+
+  #name-title-container{
+    display:block;
+    margin:auto 0;
+    width:100%;
+  }
+
+  #nav-container{
+    justify-content: left;
+    margin-top:24px;
+    width:100%;
+  }
+
+  #nav-container a{
+    margin-left:0;
+    margin-right:24px;
+  }
+
 }
