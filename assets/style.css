@@ -1,5 +1,7 @@
 :root {
   --aqua: #6db7aa;
+  --yellow: #eac558;
+  --light-yellow: #f2dc7e;
 }
 
 html {
@@ -94,7 +96,7 @@ section {
 }
 
 section .section-title-container{
-  border-right:1px solid #f2dc7e;
+  border-right:1px solid var(--light-yellow);
   width:260px;
 }
 
@@ -130,6 +132,15 @@ section p {
   margin:12px;
   border:1px solid var(--aqua);
   padding:24px;
+  transition:box-shadow 0.2s ease-in;
+  -webkit-transition:box-shadow 0.2s ease-in;
+  -moz-transition:box-shadow 0.2s ease-in;
+  -ms-transition:box-shadow 0.2s ease-in;
+  -o-transition:box-shadow 0.2s ease-in;
+}
+
+.proj-card--main:hover{
+  box-shadow: 0px 0px 16px var(--aqua);
 }
 
 .proj-card--main img{
@@ -142,6 +153,15 @@ section p {
   margin:12px;
   border:1px solid var(--aqua);
   padding:24px;
+  transition:box-shadow 0.2s ease-in;
+  -webkit-transition:box-shadow 0.2s ease-in;
+  -moz-transition:box-shadow 0.2s ease-in;
+  -ms-transition:box-shadow 0.2s ease-in;
+  -o-transition:box-shadow 0.2s ease-in;
+}
+
+.proj-card:hover{
+  box-shadow: 0px 0px 16px var(--aqua);
 }
 
 .proj-card img {
@@ -172,16 +192,14 @@ section p {
 }
 
 footer{
-  background-color: #eac558;
   padding:80px;
-  height:20vh;
+  height:300px;
   font-size:12px;
   text-align: center;
+  background: linear-gradient(45deg, var(--yellow), var(--aqua));
 }
 
 /* Media Queries */
-
-
 
 /* Tablet */
 @media only screen and (max-width: 768px) {
@@ -244,6 +262,14 @@ footer{
   #nav-container a{
     margin-left:0;
     margin-right:24px;
+  }
+
+  .proj-card--main{
+    margin:0 0 16px 0;
+  }
+
+  .proj-card{
+    margin:0 0 16px 0;
   }
 
 }
