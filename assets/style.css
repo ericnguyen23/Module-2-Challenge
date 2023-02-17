@@ -1,0 +1,97 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:16px;
+}
+
+header {
+  display: flex;
+  height:400px;
+  padding:80px;
+  background: url(./images/desk.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 10% 90%;
+}
+
+h1,h6{margin-bottom:8px;}
+
+header h1, header h2 {
+  color: white;
+}
+
+header img {
+  width:75px;
+  height:75px;
+  margin-right:12px;
+}
+
+h1{
+  font-size:36px;
+  font-weight: 700;
+}
+
+h2{
+  font-size:28px;
+}
+
+#name-title-container{
+  display:flex;
+  margin:auto 0;
+  width:50%;
+}
+
+#nav-container{
+  display:flex;
+  justify-content: right;
+  margin:auto 0;
+  width:50%;
+}
+
+#nav-container a{
+  color: white;
+  margin-left:24px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+#nav-container a:hover{
+  color:coral;
+}
+
+main{
+  border:1px solid red;
+  padding:100px;
+}
+
+section {
+  display:flex;
+  border: 1px solid grey;
+  margin-bottom:60px;
+}
+
+section h2 {
+  background-color: antiquewhite;
+  padding:60px;
+}
+section p {
+  padding:60px;
+}
+
+/* Project Cards */
+
+.proj-card{
+  width:200px;
+  border:1px solid blue;
+  padding:20px;
+  margin:60px;
+}
+
+.proj-card img {
+  width:100%;
+}
+
+.proj-card p {
+  padding:0;
+}
