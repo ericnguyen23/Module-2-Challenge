@@ -188,8 +188,8 @@ form {
   width:100%;
 }
 
-form label {
-
+form p {
+  margin-bottom:8px;
 }
 
 form input {
