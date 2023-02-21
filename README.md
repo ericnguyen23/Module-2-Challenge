@@ -1,6 +1,8 @@
 # Module-2-Challenge
 
-This project solves the follwing acceptance criterias:
+This project utilizes HTML & CSS to build a portfolio website.
+
+It solves the follwing acceptance criterias:
 
 - GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
@@ -21,6 +23,8 @@ THEN I am taken to that deployed application
 - WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
 
-Screenshot of the project
+Screenshot of the project:
 
 ![screenshot](./assets/images/site-screenshot.png)
+
+Link to deployed site: [Eric's Portfolio](https://ericnguyen23.github.io/Module-2-Challenge/)
