@@ -2,6 +2,8 @@
   --aqua: #6db7aa;
   --yellow: #eac558;
   --light-yellow: #f2dc7e;
+  --padding--80: 80px;
+  --padding--40: 40px;
 }
 
 html {
@@ -46,7 +48,7 @@ p {
 header {
   display: flex;
   height:50vh;
-  padding:80px;
+  padding:var(--padding--80);
   background: url(./images/colorful-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -190,6 +192,42 @@ section p {
 .blue-text{
   color: #6db7aa;
 }
+
+/* Contact Form */
+
+form {
+  border:1px solid var(--aqua);
+  padding: var(--padding--40);
+  width:100%;
+}
+
+form label {
+
+}
+
+form input {
+  padding:8px;
+  margin:8px 0;
+  transition:box-shadow 0.2s ease-in;
+  -webkit-transition:box-shadow 0.2s ease-in;
+  -moz-transition:box-shadow 0.2s ease-in;
+  -ms-transition:box-shadow 0.2s ease-in;
+  -o-transition:box-shadow 0.2s ease-in;
+}
+
+form input:hover {
+  box-shadow: 0px 0px 16px var(--aqua);
+}
+
+form input[type="submit"] {
+  background-color: var(--aqua);
+  border:none;
+  padding: 8px 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
 
 footer{
   padding:80px;
